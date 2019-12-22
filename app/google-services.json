@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "56172224276",
+    "firebase_url": "https://mainn-59d31.firebaseio.com",
+    "project_id": "mainn-59d31",
+    "storage_bucket": "mainn-59d31.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56172224276:android:dc05193127fa039c7cac01",
+        "android_client_info": {
+          "package_name": "com.example.mainn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56172224276-j2m6arusf46jrram98k7m228dlgjdi3g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mainn",
+            "certificate_hash": "c69a3d4ca79577325ed4c186f3cbe0eb2525712d"
+          }
+        },
+        {
+          "client_id": "56172224276-1qimld3t4do28bufos8p5on2mt7oda8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA35rEBHmigmof3HQWp5B_cTfkvz8L3B7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56172224276-1qimld3t4do28bufos8p5on2mt7oda8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

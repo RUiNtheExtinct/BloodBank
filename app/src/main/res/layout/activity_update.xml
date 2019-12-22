@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbarSize="10dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarDefaultDelayBeforeFade="1500"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideInset">
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/back"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:fontFamily="@font/qbold"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginBottom="15sp">
+
+            <EditText
+                android:id="@+id/e2"
+                android:fontFamily="@font/qbold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:paddingTop="8sp"
+                android:paddingLeft="8sp"
+                android:paddingRight="8sp"
+                android:paddingBottom="8sp"
+                android:focusableInTouchMode="true"
+                android:gravity="start"
+                android:hint="Name..."
+                android:inputType="textPersonName"
+                android:textSize="20sp"
+                android:tooltipText="Enter Name..." />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/back"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:fontFamily="@font/qbold"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginBottom="15sp">
+
+            <EditText
+                android:id="@+id/e3"
+                android:fontFamily="@font/qbold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:paddingTop="8sp"
+                android:paddingLeft="8sp"
+                android:paddingRight="8sp"
+                android:paddingBottom="8sp"
+                android:focusableInTouchMode="true"
+                android:gravity="start"
+                android:hint="Age..."
+                android:inputType="number"
+                android:textSize="20sp"
+                android:tooltipText="Enter Age..." />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/e4"
+            android:background="@drawable/back"
+            android:tooltipText="Enter Blood Type"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:spinnerMode="dropdown"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/back"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:fontFamily="@font/qbold"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginBottom="15sp">
+
+            <EditText
+                android:id="@+id/e5"
+                android:fontFamily="@font/qbold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:paddingTop="8sp"
+                android:paddingLeft="8sp"
+                android:paddingRight="8sp"
+                android:paddingBottom="8sp"
+                android:focusableInTouchMode="true"
+                android:gravity="start"
+                android:hint="Phone No..."
+                android:inputType="phone"
+                android:textSize="20sp"
+                android:tooltipText="Enter Phone No..." />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/back"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:fontFamily="@font/qbold"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginBottom="15sp">
+
+            <EditText
+                android:id="@+id/e6"
+                android:fontFamily="@font/qbold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:paddingTop="8sp"
+                android:paddingLeft="8sp"
+                android:paddingRight="8sp"
+                android:paddingBottom="8sp"
+                android:focusableInTouchMode="true"
+                android:gravity="start"
+                android:hint="City..."
+                android:inputType="text"
+                android:textSize="20sp"
+                android:tooltipText="Enter City..." />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="8sp"
+            android:paddingBottom="8sp"
+            android:paddingRight="8sp"
+            android:paddingLeft="8sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginBottom="15sp"
+            android:layout_marginTop="15sp"
+            android:fontFamily="@font/qbold"
+            android:textSize="20sp"
+            android:text="Update"
+            android:textColor="#ffffff"
+            android:tooltipText="Change Profile"
+            android:background="@drawable/back" />
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
