@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
     tools:context=".RegistrationActivity">
 
     <LinearLayout
@@ -23,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/back"
-            android:textColor="#ffffff"
+            android:textColor="#000000"
             android:textColorHint="#ffffff"
             android:fontFamily="@font/qbold"
             android:layout_marginLeft="15sp"
@@ -44,6 +45,8 @@
                 android:focusableInTouchMode="true"
                 android:gravity="start"
                 android:hint="Name..."
+                android:drawableStart="@drawable/ic_account_circle_black_24dp"
+                android:drawablePadding="30sp"
                 android:inputType="textPersonName"
                 android:textSize="20sp"
                 android:tooltipText="Enter Name..." />
@@ -55,7 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/back"
-            android:textColor="#ffffff"
+            android:textColor="#000000"
             android:textColorHint="#ffffff"
             android:fontFamily="@font/qbold"
             android:layout_marginLeft="15sp"
@@ -76,6 +79,8 @@
                 android:focusableInTouchMode="true"
                 android:gravity="start"
                 android:hint="Age..."
+                android:drawableStart="@drawable/ic_more_horiz_black_24dp"
+                android:drawablePadding="30sp"
                 android:inputType="number"
                 android:textSize="20sp"
                 android:tooltipText="Enter Age..." />
@@ -98,7 +103,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/back"
-            android:textColor="#ffffff"
+            android:textColor="#000000"
             android:textColorHint="#ffffff"
             android:fontFamily="@font/qbold"
             android:layout_marginLeft="15sp"
@@ -119,6 +124,8 @@
                 android:focusableInTouchMode="true"
                 android:gravity="start"
                 android:hint="Phone No..."
+                android:drawableStart="@drawable/ic_local_phone_black_24dp"
+                android:drawablePadding="30sp"
                 android:inputType="phone"
                 android:textSize="20sp"
                 android:tooltipText="Enter Phone No..." />
@@ -129,7 +136,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/back"
-            android:textColor="#ffffff"
+            android:textColor="#000000"
             android:textColorHint="#ffffff"
             android:fontFamily="@font/qbold"
             android:layout_marginLeft="15sp"
@@ -150,6 +157,8 @@
                 android:focusableInTouchMode="true"
                 android:gravity="start"
                 android:hint="City..."
+                android:drawableStart="@drawable/ic_add_location_black_24dp"
+                android:drawablePadding="30sp"
                 android:inputType="text"
                 android:textSize="20sp"
                 android:tooltipText="Enter City..." />

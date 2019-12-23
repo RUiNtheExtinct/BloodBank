@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:background="@drawable/bg_login">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,8 +23,8 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/back"
-            android:textColor="#ffffff"
-            android:textColorHint="#ffffff"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
             android:fontFamily="@font/qbold"
             android:layout_marginLeft="15sp"
             android:layout_marginTop="15sp"
@@ -31,10 +32,12 @@
             android:layout_marginBottom="15sp">
 
             <EditText
-                android:id="@+id/e1"
+                android:id="@+id/etEmailId"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:drawableStart="@drawable/ic_email_black_24dp"
+                android:drawablePadding="30sp"
                 android:paddingTop="8sp"
                 android:paddingLeft="8sp"
                 android:paddingRight="8sp"
@@ -59,12 +62,12 @@
             android:layout_gravity="center"
             android:background="@drawable/back"
             app:passwordToggleEnabled="true"
-            android:textColorHint="#ffffff"
-            android:textColor="#ffffff"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
             android:fontFamily="@font/qbold">
 
             <EditText
-                android:id="@+id/e2"
+                android:id="@+id/etPassword"
                 android:paddingTop="8sp"
                 android:paddingBottom="8sp"
                 android:paddingRight="8sp"
@@ -72,9 +75,12 @@
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
                 android:hint="Password"
+                android:drawableStart="@drawable/ic_texture_black_24dp"
+                android:drawablePadding="30sp"
                 android:textSize="20sp"
                 android:layout_gravity="center"
                 android:gravity="start"
+                android:textColor="#000000"
                 android:inputType="textPassword"
                 android:tooltipText="Password"/>
 
@@ -83,7 +89,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/b1"
+            android:id="@+id/btnLogin"
             android:layout_gravity="center"
             android:gravity="center"
             android:paddingTop="8sp"
@@ -99,28 +105,63 @@
             android:text="Sign In"
             android:textColor="#ffffff"
             android:tooltipText="Sign In"
-            android:background="@drawable/back" />
+            android:background="@drawable/backb" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/b2"
+        <TextView
+            android:id="@+id/tvForgotPassword"
             android:layout_gravity="center"
             android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginBottom="15sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="8sp"
+            android:paddingTop="8sp"
+            android:paddingRight="8sp"
+            android:paddingBottom="8sp"
+            android:text="@string/don_t_remember_password"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/footer_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginBottom="15sp"
             android:paddingTop="8sp"
             android:paddingBottom="8sp"
             android:paddingRight="8sp"
             android:paddingLeft="8sp"
-            android:layout_marginRight="15sp"
-            android:layout_marginLeft="15sp"
-            android:layout_marginBottom="15sp"
-            android:layout_marginTop="15sp"
-            android:fontFamily="@font/qbold"
-            android:textSize="20sp"
-            android:text="Sign Up"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/tvSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/dont_have_an_account"
             android:textColor="#ffffff"
-            android:tooltipText="Sign Up"
-            android:background="@drawable/back" />
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginBottom="15sp"
+            android:paddingTop="8sp"
+            android:paddingBottom="8sp"
+            android:paddingRight="8sp"
+            android:paddingLeft="8sp"/>
+
 
     </LinearLayout>
 

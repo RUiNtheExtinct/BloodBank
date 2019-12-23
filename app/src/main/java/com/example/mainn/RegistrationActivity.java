@@ -1,5 +1,6 @@
 package com.example.mainn;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -185,6 +186,8 @@ public class RegistrationActivity extends AppCompatActivity
                                         if(task.isSuccessful())
                                         {
                                             Toast.makeText(RegistrationActivity.this, "New Account Created", Toast.LENGTH_SHORT).show();
+                                            startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                                            finish();
                                         }
                                         else
                                         {

@@ -3,6 +3,7 @@ package com.example.mainn;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -114,7 +115,8 @@ public class UpdateActivity extends AppCompatActivity
                     b = true;
                 }
 
-                if(b) {
+                if(b)
+                {
                     uid = auth.getCurrentUser().getUid();
                     dref = fdb.collection("Users").document(uid);
                     dref.update("Name", s2);
@@ -123,6 +125,8 @@ public class UpdateActivity extends AppCompatActivity
                     dref.update("Location", s6);
                     dref.update("Phone No", s5);
                     Toast.makeText(UpdateActivity.this, "Profile Updated...", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                    finish();
                 }
             }
         });

@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
     tools:context=".RegistrationActivity">
 
     <LinearLayout
@@ -21,9 +22,8 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/back"
-            android:textColor="#ffffff"
-            android:textColorHint="#ffffff"
-
+            android:textColor="#000000"
+            android:textColorHint="#000000"
             android:layout_marginLeft="15sp"
             android:layout_marginTop="15sp"
             android:layout_marginRight="15sp"
@@ -32,6 +32,8 @@
             <EditText
                 android:fontFamily="@font/qbold"
                 android:id="@+id/e1"
+                android:drawableStart="@drawable/ic_email_black_24dp"
+                android:drawablePadding="30sp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -53,8 +55,8 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/back"
-            android:textColor="#ffffff"
-            android:textColorHint="#ffffff"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
             android:fontFamily="@font/qbold"
             android:layout_marginLeft="15sp"
             android:layout_marginTop="15sp"
@@ -74,6 +76,8 @@
                 android:focusableInTouchMode="true"
                 android:gravity="start"
                 android:hint="Name..."
+                android:drawableStart="@drawable/ic_account_circle_black_24dp"
+                android:drawablePadding="30sp"
                 android:inputType="textPersonName"
                 android:textSize="20sp"
                 android:tooltipText="Enter Name..." />
@@ -85,8 +89,8 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/back"
-            android:textColor="#ffffff"
-            android:textColorHint="#ffffff"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
             android:fontFamily="@font/qbold"
             android:layout_marginLeft="15sp"
             android:layout_marginTop="15sp"
@@ -106,6 +110,8 @@
                 android:focusableInTouchMode="true"
                 android:gravity="start"
                 android:hint="Age..."
+                android:drawableStart="@drawable/ic_more_horiz_black_24dp"
+                android:drawablePadding="30sp"
                 android:inputType="number"
                 android:textSize="20sp"
                 android:tooltipText="Enter Age..." />
@@ -128,8 +134,8 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@drawable/back"
-        android:textColor="#ffffff"
-        android:textColorHint="#ffffff"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
         android:fontFamily="@font/qbold"
         android:layout_marginLeft="15sp"
         android:layout_marginTop="15sp"
@@ -147,11 +153,13 @@
             android:paddingRight="8sp"
             android:paddingBottom="8sp"
             android:focusableInTouchMode="true"
-                android:gravity="start"
-                android:hint="Phone No..."
-                android:inputType="phone"
-                android:textSize="20sp"
-                android:tooltipText="Enter Phone No..." />
+            android:gravity="start"
+            android:hint="Phone No..."
+            android:drawableStart="@drawable/ic_local_phone_black_24dp"
+            android:drawablePadding="30sp"
+            android:inputType="phone"
+            android:textSize="20sp"
+            android:tooltipText="Enter Phone No..." />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -159,8 +167,8 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/back"
-            android:textColor="#ffffff"
-            android:textColorHint="#ffffff"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
             android:fontFamily="@font/qbold"
             android:layout_marginLeft="15sp"
             android:layout_marginTop="15sp"
@@ -180,6 +188,8 @@
                 android:focusableInTouchMode="true"
                 android:gravity="start"
                 android:hint="City..."
+                android:drawableStart="@drawable/ic_add_location_black_24dp"
+                android:drawablePadding="30sp"
                 android:inputType="text"
                 android:textSize="20sp"
                 android:tooltipText="Enter City..." />
@@ -196,8 +206,8 @@
             android:layout_gravity="center"
             android:background="@drawable/back"
             app:passwordToggleEnabled="true"
-            android:textColorHint="#ffffff"
-            android:textColor="#ffffff"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
             android:fontFamily="@font/qbold">
 
             <EditText
@@ -210,6 +220,8 @@
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
                 android:hint="Password..."
+                android:drawableStart="@drawable/ic_texture_black_24dp"
+                android:drawablePadding="30sp"
                 android:textSize="20sp"
                 android:layout_gravity="center"
                 android:gravity="start"
@@ -229,8 +241,8 @@
             android:layout_gravity="center"
             android:background="@drawable/back"
             app:passwordToggleEnabled="true"
-            android:textColorHint="#ffffff"
-            android:textColor="#ffffff"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
             android:fontFamily="@font/qbold">
 
             <EditText
@@ -243,6 +255,8 @@
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
                 android:hint="Confirm Password..."
+                android:drawableStart="@drawable/ic_texture_black_24dp"
+                android:drawablePadding="30sp"
                 android:textSize="20sp"
                 android:layout_gravity="center"
                 android:gravity="start"
@@ -270,7 +284,7 @@
             android:text="Submit"
             android:textColor="#ffffff"
             android:tooltipText="Create Account"
-            android:background="@drawable/back" />
+            android:background="@drawable/backb" />
 
     </LinearLayout>
     

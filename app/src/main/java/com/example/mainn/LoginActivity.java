@@ -4,10 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -18,10 +20,14 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity
 {
-    EditText e1, e2;
-    Button b1, b2;
-    FirebaseAuth auth;
+    EditText etEmailid,etPassword;
+    TextView tvForgotpassword,tvSignup;
+    Button btnLogin;
+    FirebaseAuth firebaseAuth;
     FirebaseUser user;
+    static SharedPreferences sp;
+    static SharedPreferences.Editor ed;
+    int j, autoSave;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -29,49 +35,75 @@ public class LoginActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        e1 = findViewById(R.id.e1);
-        e2 = findViewById(R.id.e2);
-        b1 = findViewById(R.id.b1);
-        b2 = findViewById(R.id.b2);
-        auth = FirebaseAuth.getInstance();
-        user = auth.getCurrentUser();
+        etEmailid=findViewById(R.id.etEmailId);
+        etPassword=findViewById(R.id.etPassword);
+        tvForgotpassword=findViewById(R.id.tvForgotPassword);
+        tvSignup=findViewById(R.id.tvSignup);
+        btnLogin=findViewById(R.id.btnLogin);
+
+        firebaseAuth=FirebaseAuth.getInstance();
+        user=firebaseAuth.getCurrentUser();
+
+        sp = getSharedPreferences("autoLogin", MODE_PRIVATE);
+        j = sp.getInt("key", 0);
+        if(j > 0)
+        {
+            Intent i = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(i);
+        }
 
 
-        b1.setOnClickListener(new View.OnClickListener() {
+        btnLogin.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v)
+            public void onClick(View view)
             {
-                final String un = e1.getText().toString();
-                String pwd = e2.getText().toString();
-                auth.signInWithEmailAndPassword(un, pwd).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+
+                final String un = etEmailid.getText().toString();
+                String pwd = etPassword.getText().toString();
+
+                firebaseAuth.signInWithEmailAndPassword(un, pwd).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful())
+
+                        if (task.isSuccessful())
                         {
-                            Intent i = new Intent(LoginActivity.this, DeleteActivity.class);
+                            autoSave = 1;
+                            SharedPreferences.Editor editor = sp.edit();
+                            editor.putInt("key", autoSave);
+                            editor.apply();
+                            Intent i = new Intent(LoginActivity.this, MainActivity.class);
                             i.putExtra("un", un);
                             startActivity(i);
                         }
                         else
                         {
-                            Toast.makeText(LoginActivity.this, "Invalid Details", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginActivity.this, "Login Failed" + task.getException(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
-
             }
         });
 
-        b2.setOnClickListener(new View.OnClickListener()
+        tvSignup.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
                 startActivity(new Intent(getApplicationContext(), RegistrationActivity.class));
+                finish();
             }
         });
 
+        tvForgotpassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent i=new Intent(LoginActivity.this,ForgotActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
 
     }
-
 }
