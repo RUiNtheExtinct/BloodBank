@@ -1,5 +1,7 @@
 # BloodBank Online
 
+![Screen 1](blood1.jpeg) ![Screen 2](blood2.jpeg) ![Screen 3](blood3.jpeg)
+
 An Android App to do the following:
 
 - Show nearby bloodbanks.
