@@ -1,6 +1,6 @@
 # BloodBank Online
 
-<img src="blood1.jpeg" width="200" height="400"> ![Screen 2](blood2.jpeg) ![Screen 3](blood3.jpeg)
+<img src="blood1.jpeg" alt="Screen 1" width="200" height="400"> <img src="blood2.jpeg" alt="Screen 2" width="200" height="400"> <img src="blood3.jpeg" alt="Screen 3" width="200" height="400">
 
 An Android App to do the following:
 
