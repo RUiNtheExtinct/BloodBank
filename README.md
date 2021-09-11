@@ -1,6 +1,6 @@
 # BloodBank Online
 
-<img src="blood1.jpeg" alt="Screen 1" width="200" height="400"> <img src="blood2.jpeg" alt="Screen 2" width="200" height="400"> <img src="blood3.jpeg" alt="Screen 3" width="200" height="400">
+<img src="blood1.jpeg" alt="Screen 1" width="200" height="400">                      <img src="blood2.jpeg" alt="Screen 2" width="200" height="400">                      <img src="blood3.jpeg" alt="Screen 3" width="200" height="400">
 
 An Android App to do the following:
 
